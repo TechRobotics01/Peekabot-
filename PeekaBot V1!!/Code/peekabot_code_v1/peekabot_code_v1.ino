@@ -42,6 +42,17 @@ int getNextBufferLen();
 
 bool dataAvailable = false;
 
+void setflash(bool state){
+  digitalWrite(LED_GPIO_NUM, state ? HIGH : LOW);
+}
+
+void setquality(int quality){
+  sensor_t *s = esp_camera_sensor_get();
+  if(s){
+    s->set_quality(s, quality);
+  }
+}
+
 void handleNewMessages(int numNewMessages){
   Serial.println("handleNewMessages");
   Serial.println(String(numNewMessages));
@@ -79,6 +90,24 @@ void handleNewMessages(int numNewMessages){
       welcome += "/photo : will take a photo\n";
       bot.sendMessage(chat_id, welcome, "Markdown");
     }
+    if(text=="/flash on"){
+      setflash(true);
+      bot.sendMessage(chat_id, "Flash ON ","");
+    }
+    if(text == "/flash off"){
+      setflash(false);
+      bot.sendMessage(chat_id,"Flash OFF", "");
+    }
+    if(text.startsWith("/quality")) {
+  int q = text.substring(9).toInt();
+
+  if(q >= 10 && q <= 63) {
+    setquality(q);
+    bot.sendMessage(chat_id, "Quality set to " + String(q), "");
+  } else {
+    bot.sendMessage(chat_id, "Enter value between 10-63", "");
+  }
+}
   }
 }
 
@@ -123,6 +152,8 @@ void setup() {
   Serial.begin(115200);
   Serial.setDebugOutput(true);
   Serial.println();
+  pinMode(LED_GPIO_NUM, OUTPUT);
+  digitalWrite(LED_GPIO_NUM, LOW);
   
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
