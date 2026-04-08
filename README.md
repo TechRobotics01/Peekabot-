@@ -13,6 +13,17 @@ so this is a rough idea of what hardware will be used for this project!
 3. 3d printed enclosure
 4. battery
 
+#PCB!!
+so the pcb for the V1 of this project consists of 
+1. IP5306 battery charging module 
+2. micro usb connector 
+3. battery connector
+4.  header pins (to connect esp32 camera module)
+
+the pcb has a samll form factor overall and will be powered by 2 li-ion battries which should give it a battery life of aproximately 8-12 hours which is enough for certain applications
+
+furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!!
+
 # SOFTWARE USED 
 1. arduino ide
 2. fusion360
