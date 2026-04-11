@@ -13,7 +13,8 @@ so this is a rough idea of what hardware will be used for this project!
 3. 3d printed enclosure
 4. battery
 
-#PCB!!
+# PCB!!
+
 so the pcb for the V1 of this project consists of 
 1. IP5306 battery charging module 
 2. micro usb connector 
@@ -23,6 +24,19 @@ so the pcb for the V1 of this project consists of
 the pcb has a samll form factor overall and will be powered by 2 li-ion battries which should give it a battery life of aproximately 8-12 hours which is enough for certain applications
 
 furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!!
+
+# 3D DESIGN!!
+so the 3d design of this project is subdivided into 3 majour and minor parts 
+1. the pcb enclosure case (3d part 1)
+2. the pcb holder lid (3d part 2)
+3. The battery holder (3d part 3)
+
+so basically the entire structure is made up of 3 parts one inside thich the pcb is mounted and then the lid of the same box 
+then the battery are mounted under these 2 parts and this part is bigger and heavier than majority of the build...
+
+Everything the pcb, the lid and the battery holder part are assembeled using M2 2.2mm screws which hold everything in place sturdily....
+
+i tried to make the entire design as small ad i could but still it is bigger than expected however for the v1 of this build i just need a working prototype and i can impliment a better structure later on
 
 # SOFTWARE USED 
 1. arduino ide
