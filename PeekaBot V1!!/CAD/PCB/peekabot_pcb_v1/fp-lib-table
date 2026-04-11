@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "peekabot_pcb_v1-backups")(type "KiCad")(uri "${KIPRJMOD}/peekabot_pcb_v1-backups.pretty")(options "")(descr ""))
+  (lib (name "PCB")(type "KiCad")(uri "C:/Users/DELL/Desktop/MISSION FALLOUT/Peekabot-/PeekaBot V1!!/CAD/PCB.pretty")(options "")(descr ""))
+)
