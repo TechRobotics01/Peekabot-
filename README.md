@@ -10,15 +10,12 @@ what this basically does is that when it recieves a /capture string on telegram 
 3. "/flash on" to turn on the flash
 4. "/flash off" to turn off the flash
 5. "/quality" use this command followed by integres from 10-63 eg "/quality 20" (lower the number higher the quality)
-6. "/sleep" to make the camera sleep at intervals of 10sseconds to save power
-7. "/wakeup" to disable the sleep mode loop\
 8. "/autoflash on/off" to enable or disable the functionalty of tunring on flash automatically when taking a photo 
 9. "/help" to get list of all the commands inside the bot's UI
 
 *NOTE*
 if the camera isn't funtioning properly the camera must be in sleep mode send "/wakeup" command to wake the camera and then it will work properly also do not keep the flash on for extended periods of time because it may cause the camera to overheat and it will also consume very high power around 500mAh wich will greatly reduce the battery life 
 
-THERE CAN BE A MAX DELAY OF 10 seconds AFTER YOU SEND THE "/wakeup" COMMAND BECZ THE CAMERA WILL ONLY RESPOND AFTER IT WOKE UP FROM IT'S SLEEP 
 
 
 
