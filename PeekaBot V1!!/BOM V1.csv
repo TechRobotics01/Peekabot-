@@ -1,0 +1,16 @@
+"C1, C5, C6, C7",805,4,10uF
+"C2, C3, C4",805,3,22uF
+C8,805,1,110uF
+C9,805,1,220uF
+"D1, D2, D3",805,3,LED
+"IO0, KEY",SW_Push_1P1T_NO_CK_KMR2,2,SW_Push
+J1,PinSocket_1x08_P2.54mm_Vertical,1,esp32camright
+J2,PinSocket_1x08_P2.54mm_Vertical,1,esp32camleft
+J3,USB_Micro-B_Molex-105017-0001,1,USB_B_Micro
+J4,JST_EH_S2B-EH_1x02_P2.50mm_Horizontal,1,Battery Socket
+L1,L_7.3x7.3_H3.5,1,1uH
+"R1, R4",805,2,10KR
+R2,805,1,R
+R3,805,1,20R
+R5,805,1,2R
+U1,SOP127P600X165-9N,1,IP5306
