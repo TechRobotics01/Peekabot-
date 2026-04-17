@@ -1,10 +1,10 @@
 # Peekabot-
-So this project is beased on an esp32 spy camera and it will basically take a picture and send it to the user via telegram bot it will also have custom built PCBs and 3D printed case!!!
+So this project is beased on an esp32 spy camera and it will basically take a picture on recieving the command and send it to the user via telegram bot it will also have custom built PCBs and 3D printed case!!!
 
 
 what this basically does is that when it recieves a /capture string on telegram it takes an image through the esp32 camera module in some part of the world and then through the telegram's api it can send the captured image anywhere in the world and it also has other functions such as adjusting jpecg quality by using "quality "val"" and also an option for enabeling the flash of the esp32 camera module 
 
-# FUNCTION
+# COMMANDS
 1. "/start" to start the bot 
 2. "/photo" to capture and send the image
 3. "/flash on" to turn on the flash
@@ -13,18 +13,13 @@ what this basically does is that when it recieves a /capture string on telegram 
 8. "/autoflash on/off" to enable or disable the functionalty of tunring on flash automatically when taking a photo 
 9. "/help" to get list of all the commands inside the bot's UI
 
-*NOTE*
-if the camera isn't funtioning properly the camera must be in sleep mode send "/wakeup" command to wake the camera and then it will work properly also do not keep the flash on for extended periods of time because it may cause the camera to overheat and it will also consume very high power around 500mAh wich will greatly reduce the battery life 
-
-
-
 
 # HARDWARE!
 so this is a rough idea of what hardware will be used for this project!
 1. Esp32 Ai-Thinker camera module
 2. custom PCB base module with reset button and a usb port to power it easily 
 3. 3d printed enclosure
-4. battery
+4. 2x li-ion batteries
 
 # PCB!!
 
@@ -34,16 +29,23 @@ so the pcb for the V1 of this project consists of
 3. battery connector
 4.  header pins (to connect esp32 camera module)
 
-the pcb has a samll form factor overall and will be powered by 2 li-ion battries which should give it a battery life of aproximately 8-12 hours which is enough for certain applications
+the pcb has a samll form factor overall and will be powered by 2 li-ion battries which should give it a battery life of aproximately 8-12 hours which is enough for most applications furthermore you can just keep it plugged in via a micro usb port and keep it at a fixed place connect it to your wifi and not worry
 
-furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!!
+Furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!! 
+
 (update) the deepsleep is not implementable for this because deep sleep will result in turning off the wifi which will result in disconnection from the telegram api servers and the esp32 would not be able to wake up and it would remain in deep sleep
+
+<img width="581" height="804" alt="image" src="https://github.com/user-attachments/assets/43f381a4-6e43-45a2-a0fa-4bfb8bb286c6" />
+<img width="481" height="661" alt="image" src="https://github.com/user-attachments/assets/a75519ac-6ce5-486f-8f08-dced0b2878d7" />
+
+
 
 # 3D DESIGN!!
 so the 3d design of this project is subdivided into 3 majour and minor parts 
 1. the pcb enclosure case (3d part 1)
 2. the pcb holder lid (3d part 2)
 3. The battery holder (3d part 3)
+4. 8x M2 2.2mm screws 
 
 so basically the entire structure is made up of 3 parts one inside thich the pcb is mounted and then the lid of the same box 
 then the battery are mounted under these 2 parts and this part is bigger and heavier than majority of the build...
@@ -52,10 +54,17 @@ Everything the pcb, the lid and the battery holder part are assembeled using M2 
 
 i tried to make the entire design as small ad i could but still it is bigger than expected however for the v1 of this build i just need a working prototype and i can impliment a better structure later on
 
+<img width="1920" height="1080" alt="peekabot_pcb_v1 v13" src="https://github.com/user-attachments/assets/418887c4-149d-4bf2-b5dd-26ea3a49fa33" />
+<img width="1920" height="1080" alt="peekabot_pcb_v1 v13 PG2" src="https://github.com/user-attachments/assets/34492c1c-b8ce-4a5a-8e6f-f38b9d95e88f" />
+<img width="793" height="627" alt="image" src="https://github.com/user-attachments/assets/05de0f6a-f058-44fb-8421-d5b6bff77c95" />
+
+
+
 # SOFTWARE USED 
 1. arduino ide
 2. fusion360
 3. kicad
+4. brain.exe💀
 
 ## OVERALL it features a small form factor as it is afterall a spy/surveilance camera ##
 
@@ -63,4 +72,5 @@ i tried to make the entire design as small ad i could but still it is bigger tha
 1. google.com
 2. random nerd tutorials
 3. arduino forms
-4. chatgpt/clause FOR DEBUGGING THE CODE
+4. instructuables
+5. chatgpt/claude ai ONLY FOR DEBUGGING OF THE CODE
