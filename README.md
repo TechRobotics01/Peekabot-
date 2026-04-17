@@ -1,5 +1,5 @@
 # Peekabot-
-So this project is beased on an esp32 spy camera and it will basically take a picture on recieving the command and send it to the user via telegram bot it will also have custom built PCBs and 3D printed case!!!
+So this project is beased on an esp32 spy camera and it will basically take a picture on recieving the command and send it to the user via telegram bot it will also have custom built PCBs and 3D printed case!!!!
 
 
 what this basically does is that when it recieves a /capture string on telegram it takes an image through the esp32 camera module in some part of the world and then through the telegram's api it can send the captured image anywhere in the world and it also has other functions such as adjusting jpecg quality by using "quality "val"" and also an option for enabeling the flash of the esp32 camera module 
