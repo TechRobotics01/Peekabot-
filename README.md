@@ -24,7 +24,7 @@ so this is a rough idea of what hardware will be used for this project!
 1. Esp32 Ai-Thinker camera module
 2. custom PCB base module with reset button and a usb port to power it easily 
 3. 3d printed enclosure
-4. battery
+4. 2x li-ion batteries
 
 # PCB!!
 
@@ -39,6 +39,11 @@ the pcb has a samll form factor overall and will be powered by 2 li-ion battries
 furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!!
 (update) the deepsleep is not implementable for this because deep sleep will result in turning off the wifi which will result in disconnection from the telegram api servers and the esp32 would not be able to wake up and it would remain in deep sleep
 
+<img width="581" height="804" alt="image" src="https://github.com/user-attachments/assets/43f381a4-6e43-45a2-a0fa-4bfb8bb286c6" />
+<img width="481" height="661" alt="image" src="https://github.com/user-attachments/assets/a75519ac-6ce5-486f-8f08-dced0b2878d7" />
+
+
+
 # 3D DESIGN!!
 so the 3d design of this project is subdivided into 3 majour and minor parts 
 1. the pcb enclosure case (3d part 1)
@@ -52,10 +57,17 @@ Everything the pcb, the lid and the battery holder part are assembeled using M2 
 
 i tried to make the entire design as small ad i could but still it is bigger than expected however for the v1 of this build i just need a working prototype and i can impliment a better structure later on
 
+<img width="1920" height="1080" alt="peekabot_pcb_v1 v13" src="https://github.com/user-attachments/assets/418887c4-149d-4bf2-b5dd-26ea3a49fa33" />
+<img width="1920" height="1080" alt="peekabot_pcb_v1 v13 PG2" src="https://github.com/user-attachments/assets/34492c1c-b8ce-4a5a-8e6f-f38b9d95e88f" />
+<img width="793" height="627" alt="image" src="https://github.com/user-attachments/assets/05de0f6a-f058-44fb-8421-d5b6bff77c95" />
+
+
+
 # SOFTWARE USED 
 1. arduino ide
 2. fusion360
 3. kicad
+4. brain.exe💀
 
 ## OVERALL it features a small form factor as it is afterall a spy/surveilance camera ##
 
