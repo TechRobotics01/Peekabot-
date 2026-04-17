@@ -1,10 +1,10 @@
 # Peekabot-
-So this project is beased on an esp32 spy camera and it will basically take a picture and send it to the user via telegram bot it will also have custom built PCBs and 3D printed case!!!
+So this project is beased on an esp32 spy camera and it will basically take a picture on recieving the command and send it to the user via telegram bot it will also have custom built PCBs and 3D printed case!!!
 
 
 what this basically does is that when it recieves a /capture string on telegram it takes an image through the esp32 camera module in some part of the world and then through the telegram's api it can send the captured image anywhere in the world and it also has other functions such as adjusting jpecg quality by using "quality "val"" and also an option for enabeling the flash of the esp32 camera module 
 
-# FUNCTION
+# COMMANDS
 1. "/start" to start the bot 
 2. "/photo" to capture and send the image
 3. "/flash on" to turn on the flash
@@ -12,11 +12,6 @@ what this basically does is that when it recieves a /capture string on telegram 
 5. "/quality" use this command followed by integres from 10-63 eg "/quality 20" (lower the number higher the quality)
 8. "/autoflash on/off" to enable or disable the functionalty of tunring on flash automatically when taking a photo 
 9. "/help" to get list of all the commands inside the bot's UI
-
-*NOTE*
-if the camera isn't funtioning properly the camera must be in sleep mode send "/wakeup" command to wake the camera and then it will work properly also do not keep the flash on for extended periods of time because it may cause the camera to overheat and it will also consume very high power around 500mAh wich will greatly reduce the battery life 
-
-
 
 
 # HARDWARE!
@@ -34,9 +29,10 @@ so the pcb for the V1 of this project consists of
 3. battery connector
 4.  header pins (to connect esp32 camera module)
 
-the pcb has a samll form factor overall and will be powered by 2 li-ion battries which should give it a battery life of aproximately 8-12 hours which is enough for certain applications
+the pcb has a samll form factor overall and will be powered by 2 li-ion battries which should give it a battery life of aproximately 8-12 hours which is enough for most applications furthermore you can just keep it plugged in via a micro usb port and keep it at a fixed place connect it to your wifi and not worry
 
-furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!!
+Furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!! 
+
 (update) the deepsleep is not implementable for this because deep sleep will result in turning off the wifi which will result in disconnection from the telegram api servers and the esp32 would not be able to wake up and it would remain in deep sleep
 
 <img width="581" height="804" alt="image" src="https://github.com/user-attachments/assets/43f381a4-6e43-45a2-a0fa-4bfb8bb286c6" />
@@ -49,6 +45,7 @@ so the 3d design of this project is subdivided into 3 majour and minor parts
 1. the pcb enclosure case (3d part 1)
 2. the pcb holder lid (3d part 2)
 3. The battery holder (3d part 3)
+4. 8x M2 2.2mm screws 
 
 so basically the entire structure is made up of 3 parts one inside thich the pcb is mounted and then the lid of the same box 
 then the battery are mounted under these 2 parts and this part is bigger and heavier than majority of the build...
@@ -75,4 +72,5 @@ i tried to make the entire design as small ad i could but still it is bigger tha
 1. google.com
 2. random nerd tutorials
 3. arduino forms
-4. chatgpt/clause FOR DEBUGGING THE CODE
+4. instructuables
+5. chatgpt/claude ai ONLY FOR DEBUGGING OF THE CODE
