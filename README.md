@@ -9,7 +9,7 @@ Peekabot is a esp32 based spy /surveillance camera system it is accessible from 
 5. bot starts
 6. checks for incoming commands
 7. returns output based on the input
-8.   
+
 # COMMANDS
 1. "/start" to start the bot 
 2. "/photo" to capture and send the image
