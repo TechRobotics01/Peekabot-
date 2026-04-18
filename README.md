@@ -1,8 +1,14 @@
 # Peekabot-
-So this project is beased on an esp32 spy camera and it will basically take a picture on recieving the command and send it to the user via telegram bot it will also have custom built PCBs and 3D printed case!!!!
+Peekabot is a esp32 based spy /surveillance camera system it is accessible from anywhere in the world (as long as it is connected to wifi) and it is accessed through telegram bot..
 
-
-what this basically does is that when it recieves a /capture string on telegram it takes an image through the esp32 camera module in some part of the world and then through the telegram's api it can send the captured image anywhere in the world and it also has other functions such as adjusting jpecg quality by using "quality "val"" and also an option for enabeling the flash of the esp32 camera module 
+# LOGIC 
+1. powers on 
+2. searches for saved wifi
+3. connects to wifi
+4. connects to telegram bot via generated API key
+5. bot starts
+6. checks for incoming commands
+7. returns output based on the input
 
 # COMMANDS
 1. "/start" to start the bot 
@@ -58,15 +64,23 @@ i tried to make the entire design as small ad i could but still it is bigger tha
 <img width="1920" height="1080" alt="peekabot_pcb_v1 v13 PG2" src="https://github.com/user-attachments/assets/34492c1c-b8ce-4a5a-8e6f-f38b9d95e88f" />
 <img width="793" height="627" alt="image" src="https://github.com/user-attachments/assets/05de0f6a-f058-44fb-8421-d5b6bff77c95" />
 
+# EXPLODED VIEW
+<img width="755" height="330" alt="Screenshot_2026-04-18_185436-removebg-preview (1)" src="https://github.com/user-attachments/assets/3d2664d1-ac21-4c12-9f4a-ecee83a412d9" />
+
+# ZINE PAGE!
+<img width="552" height="791" alt="image" src="https://github.com/user-attachments/assets/1b87a18f-60d2-4c65-b791-b58a14f15983" />
+
+
 
 
 # SOFTWARE USED 
 1. arduino ide
 2. fusion360
 3. kicad
-4. brain.exe💀
+4. canava (for zine page)
+5. brain.exe💀
 
-## OVERALL it features a small form factor as it is afterall a spy/surveilance camera ##
+## overall it features a small form factor as it is...afterall a spy/surveilance camera ##
 
 # CREDITS
 1. google.com
