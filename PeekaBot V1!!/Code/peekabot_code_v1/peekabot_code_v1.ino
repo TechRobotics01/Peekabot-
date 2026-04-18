@@ -26,7 +26,7 @@
 
 const char* ssid = "Redmi_Note_10T_5G";
 const char* password = "88888888";
-const char* bottoken = "8618369274:AAHw-g_aMBWGjgkCW_63dtZRbnBc93KkUzM";
+const char* bottoken = "***********************"; // generate it in telegram and paste it here 
 
 WiFiClientSecure secured_client;
 UniversalTelegramBot bot(bottoken, secured_client);
