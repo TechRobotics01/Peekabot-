@@ -66,6 +66,16 @@ i tried to make the entire design as small ad i could but still it is bigger tha
 <img width="1920" height="1080" alt="peekabot_pcb_v1 v13 PG2" src="https://github.com/user-attachments/assets/34492c1c-b8ce-4a5a-8e6f-f38b9d95e88f" />
 <img width="793" height="627" alt="image" src="https://github.com/user-attachments/assets/05de0f6a-f058-44fb-8421-d5b6bff77c95" />
 
+## how to assemble it ##
+1. print all the parts in the 3D designs folder
+2. get the pcb shipped from anywhere you can use PCBA but soldering everything yourself would be much cheaper
+3. put all the SMD components for the pcb put them on the pcb with some solder paste and then put it on a hotplate and let the solder paste melt and all the smd components will be soldered in place
+4. now connect 2 li-ion battery in series and solder the output wires and then add a male JST connector
+5. now place the pcb in the middle piece 3d print and then screw it on using M2 allen screws
+6. then connect the battery JST connector to the PCB
+7. then put the esp32 camera on the PCb female header pins
+8. now put all the parts together and screw it together with M2 2.2mm 10mm deep screws and refer to the exploded view.avi video for detaled instructions on where to put the screws in 
+
 # EXPLODED VIEW
 <img width="755" height="330" alt="Screenshot_2026-04-18_185436-removebg-preview (1)" src="https://github.com/user-attachments/assets/3d2664d1-ac21-4c12-9f4a-ecee83a412d9" />
 
