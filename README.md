@@ -1,6 +1,8 @@
 # Peekabot-
 Peekabot is a esp32 based spy /surveillance camera system it is accessible from anywhere in the world (as long as it is connected to wifi) and it is accessed through telegram bot..
 
+# why was this made? 
+why was this made you may ask well i previousely made a esp32 spy camera but it was based on wifi and it didn't have that long of a range also it was not battery operated and no custom pcb or any BMS so i made this and this project has all what the previous one lacked  
 # LOGIC 
 1. powers on 
 2. searches for saved wifi
