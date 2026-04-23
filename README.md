@@ -1,7 +1,7 @@
 # Peekabot-
 Peekabot is a esp32 based spy /surveillance camera system it is accessible from anywhere in the world (as long as it is connected to wifi) and it is accessed through telegram bot..
 
-# why was this made? 
+# REASON FOR BUILDING THIS 
 why was this made you may ask well i previousely made a esp32 spy camera but it was based on wifi and it didn't have that long of a range also it was not battery operated and no custom pcb or any BMS so i made this and this project has all what the previous one lacked  
 # LOGIC 
 1. powers on 
@@ -66,7 +66,7 @@ i tried to make the entire design as small ad i could but still it is bigger tha
 <img width="1920" height="1080" alt="peekabot_pcb_v1 v13 PG2" src="https://github.com/user-attachments/assets/34492c1c-b8ce-4a5a-8e6f-f38b9d95e88f" />
 <img width="793" height="627" alt="image" src="https://github.com/user-attachments/assets/05de0f6a-f058-44fb-8421-d5b6bff77c95" />
 
-## how to assemble it ##
+## HOW TO ASSEMBLE IT ##
 1. print all the parts in the 3D designs folder
 2. get the pcb shipped from anywhere you can use PCBA but soldering everything yourself would be much cheaper
 3. put all the SMD components for the pcb put them on the pcb with some solder paste and then put it on a hotplate and let the solder paste melt and all the smd components will be soldered in place
