@@ -77,7 +77,8 @@ i tried to make the entire design as small ad i could but still it is bigger tha
 5. now place the pcb in the middle piece 3d print and then screw it on using M2 allen screws
 6. then connect the battery JST connector to the PCB
 7. then put the esp32 camera on the PCb female header pins
-8. now put all the parts together and screw it together with M2 2.2mm 10mm deep screws and refer to the exploded view.avi video for detaled instructions on where to put the screws in 
+8. now put all the parts together and screw it together with M2 2.2mm 10mm deep screws and refer to the exploded view.avi video for detaled instructions on where to put the screws in
+9. for the software you need to log into telegram and set up a bot yourself and then you need to get the API key of the bot and then paste the API key in the code before uploading it to the camera USING AN FTDI OR BASE BASE BOARD
 
 # EXPLODED VIEW
 <img width="755" height="330" alt="Screenshot_2026-04-18_185436-removebg-preview (1)" src="https://github.com/user-attachments/assets/3d2664d1-ac21-4c12-9f4a-ecee83a412d9" />
