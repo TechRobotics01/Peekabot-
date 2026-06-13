@@ -42,6 +42,7 @@ the pcb has a samll form factor overall and will be powered by 2 li-ion battries
 Furthermore i will optimize the code so that the esp32 will go to deep sleep so that it could possibly in theory survive for months on a singular charge!! 
 
 (update) the deepsleep is not implementable for this because deep sleep will result in turning off the wifi which will result in disconnection from the telegram api servers and the esp32 would not be able to wake up and it would remain in deep sleep
+# SCHEMATICS
 <img width="1037" height="631" alt="image" src="https://github.com/user-attachments/assets/2ab69c0a-0ccc-4e71-adba-929e1d0b47f1" />
 <img width="549" height="640" alt="image" src="https://github.com/user-attachments/assets/a42e1c3e-6164-42a6-bbc7-7a355b9d0669" />
 
